@@ -10,7 +10,6 @@ st.set_page_config(page_title="IoT Dashboard", layout="wide")
 # -------------------------
 # Auto-refresh every 5 seconds
 # -------------------------
-st_autorefresh = st.experimental_rerun
 
 # -------------------------
 # Initialize data storage
