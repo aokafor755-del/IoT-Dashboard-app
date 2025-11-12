@@ -170,10 +170,13 @@ panels = [
 ]
 
 st.markdown("### 🧩 Drag Panels to Reorder")
-with sortable_container(panels, container_style={"display": "flex", "gap": "20px"}):
-    for panel in panels:
-        with st.container():
-            st.markdown(f"#### {panel['title']}")
-            panel["content"]()
+# Dashboard main metrics section
+st.write("🔹 Live Statistics")
 
-st.caption(f"Last updated: {datetime.datetime.now().strftime('%B %d, %Y %I:%M:%S %p')}")
+col1, col2, col3 = st.columns(3)
+with col1:
+    st.metric("Energy Today", f"{energy_today} kWh")
+with col2:
+    st.metric("Water Today", f"{water_today} L")
+with col3:
+    st.metric("Lighting", f"{lighting}%")
