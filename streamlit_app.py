@@ -5,8 +5,6 @@ import numpy as np
 import datetime
 import os
 import plotly.graph_objects as go
-from streamlit_sortable import sortable_container
-
 # ============================
 # CONFIG
 # ============================
