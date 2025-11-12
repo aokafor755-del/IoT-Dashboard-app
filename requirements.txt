@@ -1,4 +1,4 @@
 streamlit
 pandas
 plotly
-streamlit-sortable
+streamlit-drag-and-drop
